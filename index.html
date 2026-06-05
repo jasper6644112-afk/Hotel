@@ -1,167 +1,97 @@
+
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kinat Guest House & Hotel</title><style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f4f4f4;
-color:#333;
-}
-
-header{
-background:linear-gradient(135deg,#0a1d6b,#1236c4);
-color:white;
-padding:80px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:20px;
-}
-
-nav{
-background:white;
-padding:15px;
-text-align:center;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-nav a{
-text-decoration:none;
-color:#0a1d6b;
-font-weight:bold;
-margin:0 15px;
-}
-
-section{
-padding:60px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-h2{
-text-align:center;
-margin-bottom:30px;
-color:#0a1d6b;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h3{
-padding:15px;
-}
-
-.card p{
-padding:0 15px 15px;
-}
-
-.btn{
-display:inline-block;
-background:#ff6a00;
-color:white;
-padding:12px 22px;
-margin:15px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-.contact{
-background:#0a1d6b;
-color:white;
-text-align:center;
-border-radius:15px;
-padding:40px;
-}
-
-footer{
-background:#07144a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-</style></head><body><header>
-<h1>Kinat Guest House & Hotel</h1>
-<p>Luxury Stay • Fresh Food • Online Ordering</p>
-</header><nav>
-<a href="#rooms">Rooms</a>
-<a href="#food">Food Menu</a>
-<a href="#contact">Contact</a>
-</nav><section id="rooms">
-<h2>Our Rooms</h2><div class="grid"><div class="card">
-<img src="https://picsum.photos/600/400?hotel">
-<h3>Luxury Room</h3>
-<p>Clean rooms with comfortable beds and quality service.</p>
+<title>Kinat Guest House & Hotel</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head><body><nav class="navbar">
+<div class="logo">KINAT HOTEL</div><ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#food">Food</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav><section id="home" class="hero"><div class="overlay"></div><div class="hero-content"><h1>Kinat Guest House & Hotel</h1><p>
+Luxury Stay • Delicious Food • Premium Hospitality
+</p><div class="hero-buttons"><a href="#rooms" class="btn gold">
+Book Room
+</a><a href="#food" class="btn dark">
+Order Food
+</a></div></div></section><section class="stats"><div class="stat">
+<h2>100+</h2>
+<p>Happy Guests</p>
+</div><div class="stat">
+<h2>24/7</h2>
+<p>Service</p>
+</div><div class="stat">
+<h2>★★★★★</h2>
+<p>Customer Rating</p>
+</div></section><section id="rooms" class="section"><h2 class="section-title">
+Luxury Rooms
+</h2><div class="cards"><div class="card">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200" alt="">
+<div class="card-content">
+<h3>Standard Room</h3>
+<p>Comfortable room with modern facilities.</p>
+<button class="book-btn">Book Now</button>
+</div>
 </div><div class="card">
-<img src="https://picsum.photos/600/400?room">
+<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200" alt="">
+<div class="card-content">
 <h3>Family Room</h3>
-<p>Spacious rooms for families and groups.</p>
+<p>Spacious rooms designed for families.</p>
+<button class="book-btn">Book Now</button>
+</div>
 </div><div class="card">
-<img src="https://picsum.photos/600/400?resort">
+<img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200" alt="">
+<div class="card-content">
 <h3>Premium Suite</h3>
-<p>Premium accommodation with modern facilities.</p>
-</div></div>
-</section><section id="food">
-<h2>Food Ordering</h2><div class="grid"><div class="card">
-<img src="https://picsum.photos/600/400?bbq">
+<p>Luxury experience with premium comfort.</p>
+<button class="book-btn">Book Now</button>
+</div>
+</div></div></section><section id="food" class="section"><h2 class="section-title">
+Food Ordering
+</h2><div class="cards"><div class="card">
+<img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=1200" alt="">
+<div class="card-content">
 <h3>BBQ Special</h3>
-<p>Fresh BBQ prepared daily.</p>
-<a class="btn" href="https://wa.me/923000462086">Order Now</a>
+<p>Freshly grilled BBQ.</p>
+<a href="https://wa.me/923000462086" class="order-btn">
+Order Now
+</a>
+</div>
 </div><div class="card">
-<img src="https://picsum.photos/600/400?tea">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200" alt="">
+<div class="card-content">
 <h3>Tea & Drinks</h3>
-<p>Hot tea, coffee and refreshments.</p>
-<a class="btn" href="https://wa.me/923000462086">Order Now</a>
+<p>Premium refreshments and tea.</p>
+<a href="https://wa.me/923000462086" class="order-btn">
+Order Now
+</a>
+</div>
 </div><div class="card">
-<img src="https://picsum.photos/600/400?rice">
+<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=1200" alt="">
+<div class="card-content">
 <h3>Rice Dishes</h3>
-<p>Traditional rice meals and specials.</p>
-<a class="btn" href="https://wa.me/923000462086">Order Now</a>
-</div></div>
-</section><section id="contact">
-<div class="contact"><h2>Contact Information</h2><p>Malik Yasir: 0300-0462086</p>
+<p>Traditional and special rice meals.</p>
+<a href="https://wa.me/923000462086" class="order-btn">
+Order Now
+</a>
+</div>
+</div></div></section><section id="reviews" class="section"><h2 class="section-title">
+Guest Reviews
+</h2><div class="review-box"><p>
+"Excellent rooms and delicious food. Highly recommended."
+</p><h4>- Happy Guest</h4></div></section><section id="contact" class="contact"><h2>Contact Us</h2><p>Malik Yasir: 0300-0462086</p>
 <p>Malik Faisal: 0334-8322499</p>
-<p>Malik Adil: 0300-0462087</p><br><p>Near GT Road, Timergara</p><a class="btn" href="https://wa.me/923000462086">
-WhatsApp Order
-</a><a class="btn" href="tel:03000462086">
+<p>Malik Adil: 0300-0462087</p><div class="contact-buttons"><a href="tel:03000462086" class="btn gold">
 Call Now
-</a></div>
-</section><footer>
-© 2026 Kinat Guest House & Hotel | All Rights Reserved
-</footer></body>
+</a><a href="https://wa.me/923000462086" class="btn dark">
+WhatsApp
+</a></div></section><footer><p>
+© 2026 Kinat Guest House & Hotel
+</p></footer><script src="script.js"></script></body>
 </html>
