@@ -1,1 +1,47 @@
-hi
+// Kinat Guest House & Hotel
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const bookButtons = document.querySelectorAll(".book-btn");
+
+bookButtons.forEach(button => {
+button.addEventListener("click", () => {
+
+const room = button.parentElement.querySelector("h3").textContent;
+
+const message =
+"Hello, I would like to book the " + room + " at Kinat Guest House & Hotel.";
+
+const url =
+"https://wa.me/923000462086?text=" +
+encodeURIComponent(message);
+
+window.open(url, "_blank");
+
+});
+});
+
+const stats = document.querySelectorAll(".stat h2");
+
+stats.forEach(stat => {
+stat.style.opacity = "0";
+});
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.style.transition = "1s";
+entry.target.style.opacity = "1";
+
+}
+
+});
+
+});
+
+stats.forEach(stat => observer.observe(stat));
+
+});
